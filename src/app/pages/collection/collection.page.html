@@ -1,0 +1,29 @@
+<app-header></app-header>
+<ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-fab (click)="scan()" vertical="center" horizontal="center">
+                    <ion-fab-button class="ScanButton">
+                        <ion-label>Scanner</ion-label>
+                    </ion-fab-button>
+                </ion-fab>
+            </ion-col>
+        </ion-row>
+        <ion-row class="ticket-Resume">
+            <ion-col id="ticket-Resume-L">
+                <ion-row>
+                    <ion-img id="ticket_image" src="../../assets/image_zepe/icon-scanner-1.svg"></ion-img>
+                    <ion-label id="ticket_image_label"> Total :</ion-label>
+                </ion-row>
+            </ion-col>
+            <ion-col id="ticket-Resume-R">
+                <ion-label><span>{{total}}</span>F cfa</ion-label>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+

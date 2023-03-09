@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>
+          Partenaire
+      </ion-title>
+      <ion-buttons slot="primary">
+          <ion-button (click)="onCancel()">
+              <ion-icon name="close"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <p *ngIf="partners== null && partners== []">Pas de partenaires</p>
+  <ion-grid class="HistoryTable">
+      <ion-row id="main_row" *ngFor="let partner of partners">
+          <ion-col>
+              <!--<ion-row id="headHistory">
+                  <ion-col size="6">
+                      <ion-row>
+                          <ion-col class="date_of_day">
+                              <ion-label>Nom</ion-label>
+                          </ion-col>
+                      </ion-row>
+                  </ion-col>
+                  <ion-col size="6">
+                      <ion-row class="Total-collection">
+                          <ion-col size="12" class="text-style-2">{{paymentByMonth.total}} tickets consommés</ion-col>
+                      </ion-row>
+                  </ion-col>
+              </ion-row>-->
+              <ion-row>
+                <ion-col>
+                    <ion-row id="bodyHistory">
+                        <ion-col size="4"><span>Nom</span></ion-col>
+                        <ion-col size="4" id="society"><span>Lieu</span></ion-col>
+                        <ion-col size="4" class="ion-text-center">
+                            <div class="tickets ion-text-center">
+                                <ion-label class="ticket_font"><!--<span>Point</span>-->
+                                  Point
+                                </ion-label>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-col>
+            </ion-row>
+              <ion-row>
+                <ion-col>
+                    <ion-row id="bodyHistory">
+                        <ion-col size="4"><span>{{partner}}</span></ion-col>
+                        <ion-col size="4" id="society"><span>{{partner}}</span></ion-col>
+                        <ion-col size="4" class="ion-text-center">
+                            <div class="tickets ion-text-center">
+                                <ion-label class="ticket_font"><!--<span>Point</span>-->
+                                  Point
+                                </ion-label>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-col>
+            </ion-row>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+
+</ion-content>

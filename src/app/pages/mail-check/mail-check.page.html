@@ -1,0 +1,33 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>mail-check</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content>
+  <div id="header">
+      <img class="Logo-ATOS" src="../../../assets/image_zepe/logo-atos.svg"/>
+      <img src="../../../assets/image_zepe/cuisinier.svg" class="Cuisinier">
+  </div>
+
+  <form id="form" [formGroup]="mailCheckForm">
+      <p class="Connexion">Vérification Email </p>
+      <p style="color: #ff0000; font-size: 14px;" *ngIf="!mailCheckForm.valid && f.email.touched && f.email.touched">Les
+          informations renseignées ne correspondent pas</p>
+
+      <p>Email :</p>
+      <ion-item class="ion-margin-bottom" #email>
+          <ion-input formControlName="email" type="email" required></ion-input>
+          <ion-icon name="person-outline" slot="end" color="dark"></ion-icon>
+      </ion-item>
+
+      <!--<p>Mot de passe :</p>
+      <ion-item class="ion-margin-bottom" #pass>
+          <ion-input formControlName="password" type="password" #passwordInput required></ion-input>
+          <ion-icon [name]="name" slot="end" color="dark" (click)="showPassword()"></ion-icon>
+      </ion-item>
+      <p class="B00_RESTO-ATOS_MOBILE_APP">Mot de passe oublié ?</p>-->
+
+      <ion-button expand="block" shape="round" (click)="saveRequest()">Envoyer</ion-button>
+  </form>
+</ion-content>

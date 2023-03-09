@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>
+          Partenaires
+      </ion-title>
+      <ion-buttons slot="primary">
+          <ion-button (click)="onCancel()">
+              <ion-icon name="close"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <p *ngIf="partners== null && partners== []">Pas de partenaires</p>
+  <ion-grid class="HistoryTable">
+    <ion-row>
+        <ion-col>
+            <ion-row id="bodyHistory">
+                <ion-col size="4"><span>Nom</span></ion-col>
+                <ion-col size="4" id="society"><span>Lieu</span></ion-col>
+                <ion-col size="4" class="ion-text-center">
+                    <div class="tickets ion-text-center">
+                        <ion-label class="ticket_font"><!--<span>Point</span>-->
+                            <img src="assets/image_zepe/map.svg" style="width: 30px; height: 30px;">
+                        </ion-label>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-col>
+    </ion-row>
+      <ion-row id="main_row" *ngFor="let partner of partners; let i = index">
+          <ion-col>
+              <ion-row>
+                <ion-col>
+                    <ion-row id="bodyPartner">
+                        <ion-col size="4"><span>{{partner.commerce.name}}</span></ion-col>
+                        <ion-col size="4" id="society"><span>{{partner.commerce.adress}}</span></ion-col>
+                        <ion-col size="4" class="ion-text-center" (click)="onClick(partner.commerce.name, partner.commerce.adress)">
+                            <div class="tickets ion-text-center">
+                                <ion-label class="ticket_font"><!--<span>Point</span>-->
+                                    <img src="assets/image_zepe/map.svg" style="width: 30px; height: 30px;">
+                                </ion-label>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-col>
+            </ion-row>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+
+</ion-content>

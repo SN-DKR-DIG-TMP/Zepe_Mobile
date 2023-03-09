@@ -1,0 +1,95 @@
+#container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+.Cuisinier {
+  z-index: 2;
+  width: 274px;
+  height: 331px;
+  top: 40px;
+  right: -70px;
+  float: right;
+  position: absolute;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.Logo-ATOS {
+  width: 65px;
+  height: 21px;
+  margin: 50px 0 0 20px;
+  object-fit: contain;
+}
+.Bienvenue-sur {
+  width: 120px;
+  height: 20px;
+  margin: 20px 21px 10px 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ff7000;
+}
+.Zepe {
+  width: 290px;
+  height: 40px;
+  margin: 10px 40px 0 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 31px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  color: #000000;
+}
+.Rgler-tous-vos-acha {
+  width: 300px;
+  height: 50px;
+  margin: 50px 30px 0 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #5e5e5e;
+}
+.Rectangle {
+  height: 40px;
+  width: 130px;
+  border-radius: 6px;
+  background-color: #075f9e;
+  margin: 15px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}

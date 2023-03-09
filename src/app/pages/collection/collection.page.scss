@@ -1,0 +1,231 @@
+ion-content{
+  --background: #eeeeee;
+
+  p {
+    text-align: center;
+  }
+
+  .libelleTotal {
+    .IconScanner-1 {
+      width: 30px;
+      height: 30px;
+      margin: 0 5px 0 0;
+      object-fit: contain;
+
+    }
+
+    .Tickets {
+      width: 60px;
+      height: 30px;
+      margin: 0 0 0 5px;
+      padding-top: 8px;
+      font-family: Poppins, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000000;
+    }
+
+    min-width: 100px;
+    margin: 10px 0 10px 20px;
+    padding: 10px 0px 5px 15px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: #ffffff;
+  }
+
+  .total {
+    max-width: 115px;
+    min-width: 80px;
+    margin: 10px 20px 10px 0;
+    padding-top: 16px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #075f9e;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .content {
+    --background: #eeeeee;
+    padding: 0 0 20px;
+  }
+
+  .Opration-rejet-Ti {
+    width: 280px;
+    height: 20px;
+    margin: 47px 20px 0 0;
+    text-shadow: 0 0 14px rgba(0, 0, 0, 0.38);
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff3131;
+  }
+
+  .Opration-valide {
+    width: 220px;
+    height: 20px;
+    margin: 47px 10px 0 0px;
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #177236;
+  }
+
+
+  /* For Mobile */
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+  }
+
+  /* For Tablets */
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    ion-grid{
+      padding-top: 110px;
+    }
+    .ticket-Resume{
+      padding: 0 100px 0 100px;
+    }
+    ion-fab-button{
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    ion-grid{
+      padding-top: 110px;
+    }
+    .ticket-Resume{
+      padding: 0 110px 0 110px;
+    }
+    ion-fab-button{
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 1024px) and (max-width: 1080px) {
+    ion-grid{
+      padding-top: 300px;
+    }
+    .ticket-Resume{
+      padding: 0 110px 0 110px;
+    }
+    ion-fab-button{
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+.tickets{
+  width: 80px;
+  height: 30px;
+  margin: 9.5px 14px 9px 21px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background-color: #ddf1ff;
+}
+
+.tickets ion-label {
+  width: 60px;
+  height: 30px;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0060a4;
+  span{
+    font-weight: bold;
+  }
+}
+
+#ticket-Resume-L {
+  width: 230px;
+  height: 40px;
+  margin: 10px 0 10px 20px;
+  padding: 10px 0 5px 15px;
+  border-radius: 6px 0 0 6px;
+  background-color: #ffffff;
+}
+
+#ticket-Resume-R {
+  width: 90px;
+  height: 40px;
+  margin: 10px 20px 10px 0;
+  padding: 10px;
+  border-radius: 0 6px 6px 0;
+  text-align: center;
+  background-color: #075f9e;
+  ion-label{
+    width: 70px;
+    height: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+#ticket_image_label{
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #0d0d0d;
+}
+.ticket-Resume{
+  align-content: center;
+  text-align: center;
+  margin-top: 450px;
+}
+.status_msg{
+  align-content: center;
+  text-align: center;
+  margin-top: 250px;
+}
+ion-fab-button{
+  --color:  #075f9e;
+  --background: #fff;
+  width: 150px;
+  height: 150px;
+  line-height: 100px;
+  margin-inline-start: -50px;
+  margin-top: 180px;
+  ion-label {
+    font-size: 23px;
+  }
+}
+

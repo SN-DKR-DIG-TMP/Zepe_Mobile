@@ -1,0 +1,215 @@
+ion-content {
+  --background: #eeeeee;
+}
+
+ion-toolbar {
+  background-color: #ddf1ff;
+}
+ion-fab-button {
+  width: 150px;
+  height: 150px;
+  line-height: 100px;
+  margin-inline-start: -50px;
+  margin-top: -50px;
+  ion-label {
+    font-size: 23px;
+  }
+}
+
+.fill-low {
+  height: 5%;
+}
+
+.main {
+  width: 320px;
+  height: 380px;
+  margin: 10px 20px 11px;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+ion-grid {
+  height: 100%;
+}
+
+.tickets {
+  width: 80px;
+  height: 30px;
+  margin: 9.5px 14px 9px 21px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background-color: #ddf1ff;
+}
+
+.tickets ion-label {
+  width: 60px;
+  height: 30px;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0060a4;
+  span {
+    font-weight: bold;
+  }
+}
+
+#ticket-Resume-L {
+  width: 230px;
+  height: 40px;
+  margin: 10px 0 10px 20px;
+  padding: 10px 0 5px 15px;
+  border-radius: 6px 0 0 6px;
+  background-color: #ffffff;
+}
+
+#ticket-Resume-R {
+  width: 90px;
+  height: 40px;
+  margin: 10px 20px 10px 0;
+  padding: 10px;
+  border-radius: 0 6px 6px 0;
+  background-color: #075f9e;
+  ion-label {
+    width: 70px;
+    height: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+#conso_amount_value {
+  height: 40px;
+  margin: 10px 0px 10px 0;
+  padding: 10px;
+  border-radius: 0 6px 6px 0;
+  background-color: #075f9e;
+  ion-label {
+    height: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+#rest_amount_value {
+  height: 40px;
+  margin: 10px 0px 10px 0;
+  padding: 10px;
+  border-radius: 0 6px 6px 0;
+  background-color: #075f9e;
+  ion-label {
+    height: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+
+#conso_amount_label{
+  height: 40px;
+  margin: 10px 0 10px 0px;
+  padding: 10px 0 5px 15px;
+  border-radius: 6px 0 0 6px;
+  background-color: #ffffff;
+}
+
+#rest_amount_label{
+  height: 40px;
+  margin: 10px 0 10px 0px;
+  padding: 10px 0 5px 15px;
+  border-radius: 6px 0 0 6px;
+  background-color: #ffffff;
+}
+#history {
+  width: 320px;
+  margin: 11px 20px 20px;
+  padding: 0.5px 2px 10px 10px;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.calendar {
+  margin-right: 10px;
+}
+
+.history_row {
+  color: #1a1a1a;
+  border-bottom: solid 1px #e0e0e0;
+  overflow-x: scroll !important;
+}
+
+#history_Title {
+  margin: 9.5px 0 9px 5px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+#history_url {
+  margin: 9.5px 5px 19.5px 5px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #075f9e;
+  ion-label {
+    text-decoration: underline;
+  }
+}
+
+#history_border_row {
+  background-color: whitesmoke;
+  border-bottom: dashed 1px #8f8f8f;
+}
+
+#ticket_image_label {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#qrcode {
+  margin-top: 35px;
+}

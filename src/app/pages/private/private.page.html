@@ -1,0 +1,45 @@
+<app-header></app-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+        <ion-row id="private">
+          <ion-avatar id="private_avatar">
+            <img src="assets/collection_icon.png">
+          </ion-avatar>
+          <ion-label id="private_name" >{{account.firstName}} {{account.lastName}}</ion-label>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-row class="liste" (click)="onAccueil()">
+          <img style="transform: rotateY(180deg);" src="assets/image_zepe/icon-retour.svg">
+          <ion-label>Accueil </ion-label>
+        </ion-row>
+        <ion-row class="liste" (click)="onHistory()">
+            <img src="assets/image_zepe/icon-historisue.svg">
+            <ion-label>Historique</ion-label>
+        </ion-row>
+        <ion-row class="liste" (click)="onPartner()" *ngIf="account.zepeRole == 'CLIENT'">
+          <img style="width: 40px; background-color: rgb(209, 238, 252); border-radius: 2px; height: 42px;" src="assets/image_zepe/partenariats.svg">
+          <ion-label>Partenaires</ion-label>
+      </ion-row>
+        <ion-row class="liste" (click)="onPasswordChange()">
+            <img src="assets/image_zepe/icon-mot-de-passe.svg">
+            <ion-label>Changer de mot de passe</ion-label>
+        </ion-row>
+        <ion-row class="liste" (click)="onInfos()">
+          <img src="assets/image_zepe/icon-donn-es-perso.svg">
+          <ion-label>Données Personnelles </ion-label>
+        </ion-row>
+        <ion-row class="liste" (click)="onDisconnect()">
+          <img src="assets/image_zepe/icon-deconnection.svg">
+          <ion-label> Déconnexion </ion-label>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

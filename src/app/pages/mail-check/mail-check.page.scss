@@ -1,0 +1,162 @@
+ion-toolbar {
+    --background: #f5f5f3; 
+ }
+ 
+ 
+ 
+ ion-content {
+     --background: #f5f5f3;
+ 
+ 
+     #header {
+ 
+         .Logo-ATOS {
+             width: 65px;
+             height: 21px;
+             margin: 38px 105px 140px 20px;
+             object-fit: contain;
+         }
+ 
+         .Cuisinier {
+             width: 160px;
+             height: 178px;
+             z-index: 2;
+             right: -28px;
+             float: right;
+             top: 12px;
+             position: absolute;
+             object-fit: contain;
+         }
+     }
+ 
+     #form {
+         margin-top: 0px;
+         padding-left: 30px;
+         padding-right: 30px;
+ 
+         p {
+             color: #243b55;
+             margin-bottom: 10px;
+         }
+ 
+         .Connexion {
+             width: 180px;
+             height: 40px;
+             margin: 05px 10px 0 0;
+             font-family: Poppins, sans-serif;
+             font-size: 22px;
+             font-weight: 600;
+             font-stretch: normal;
+             font-style: normal;
+             line-height: normal;
+             letter-spacing: normal;
+             color: #000000;
+         }
+         .B00_RESTO-ATOS_MOBILE_APP {
+             width: 100%;
+             padding: 4px 0 10px 10px;
+             text-align: end;
+         }
+         ion-item {
+             --background: white;
+             --color: black;
+             --highlight-color-focused: none;
+             --highlight-background: none;
+             margin: 0 0 0;
+             border-radius: 6px;
+             border: solid 1px #b9b9b9;
+             background-color: #ffffff;
+ 
+             ion-icon {
+                 --ion-color-base: #243b55 !important;
+             }
+ 
+         }
+ 
+         ion-item.ion-touched.ion-invalid {
+             border: 1px solid red;
+         }
+ 
+         a {
+             font-size: 17px;
+             letter-spacing: 0.5px;
+             text-decoration: none;
+             color: black;
+             text-decoration: underline;
+         }
+ 
+         /* ion-item {
+             border-radius: 50px;
+             height: 55px;
+             box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.08);
+             --highlight-color-focused: none;
+ 
+             ion-input {
+                font-size: 18px;
+                --padding-top: 20px;
+                --padding-bottom: 15px;
+                --padding-start: 5px;
+             }
+ 
+             a {
+                 font-size: 17px;
+                 letter-spacing: 0.5px;
+                 text-decoration: none;
+             }
+         }*/
+ 
+         ion-button {
+             margin-top: 25px;
+             --ion-color-primary: #243b55;
+             height: 45px;
+             text-transform: initial;
+             --border-radius: 6px;
+             // box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.05);
+             --box-shadow: none;
+             cursor: pointer;
+             font-family: Poppins, sans-serif;
+             font-size: 16px;
+             font-weight: bold;
+             font-stretch: normal;
+             font-style: normal;
+             line-height: normal;
+             letter-spacing: normal;
+             text-align: center;
+             color: #ffffff;
+         }
+     }
+ 
+     /* For Mobile */
+     @media screen and (min-width: 320px) and (max-width: 600px){
+     }
+ 
+     /* For Tablets */
+     @media screen and (min-width: 600px) and (max-width: 768px) {
+ 
+     }
+ 
+     /* Medium devices (landscape tablets, 768px and up) */
+     @media only screen and (min-width: 768px) and (max-width: 1024px) {
+         #form {
+             margin-top: 0;
+             padding: 0 160px 0 160px;
+         }
+     }
+ 
+     /* Medium devices (landscape tablets, 768px and up) */
+     @media only screen and (min-width: 1024px) and (max-width: 1080px) {
+         #form {
+             margin-top: 0;
+             padding: 0 200px 0 200px;
+         }
+     }
+ 
+     /* Medium devices (landscape tablets, 768px and up) */
+     @media only screen and (min-width: 1080px) {
+         #form {
+             margin-top: 0;
+             padding: 0 250px 0 250px;
+         }
+     }
+ }
+ 

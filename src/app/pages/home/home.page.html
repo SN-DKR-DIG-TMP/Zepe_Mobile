@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+  <div id="header">
+    <ion-row>
+      <ion-img  class="Logo-ATOS" [src]="'../../assets/image_zepe/logo-atos.svg'"></ion-img>
+      <ion-img  class="Cuisinier" [src]="'../../assets/image_zepe/cuisinier.svg'"></ion-img>
+    </ion-row>
+  </div>
+
+  <div id="container">
+    <ion-label class="Bienvenue-sur">Bienvenue sur</ion-label>
+    <br/>
+    <ion-label class="Zepe">ZePé</ion-label>
+    <br/>
+    <ion-label class="Rgler-tous-vos-acha">Régler tous vos achats en ligne</ion-label>
+    <br/>
+    <br/>
+    <button class="Rectangle" [hidden]="!firebaseOk" (click)="goToLogin()">Connexion</button>
+    <button class="Rectangle" [hidden]="firebaseOk" (click)="getFirebaseToken()">Réessayer</button>
+  </div>
+</ion-content>

@@ -1,0 +1,35 @@
+#private_avatar {
+  width: 66px;
+  height: 66px;
+}
+
+#private_name {
+  margin: 20px 0 29px 30px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+#private {
+  border-bottom-style: dashed ;
+  border-bottom-color: #8f8f8f;
+  border-bottom-width: 1px;
+  padding-left: 30px;
+
+}
+
+.liste {
+  border-bottom-style: solid;
+ border-bottom-color: #e0e0e0;
+  border-bottom-width: 1px;
+  margin-left: 16px;
+  padding: 13px 0 13px 0;
+    ion-label {
+      margin: 12px 0 0 10px;
+    }
+}

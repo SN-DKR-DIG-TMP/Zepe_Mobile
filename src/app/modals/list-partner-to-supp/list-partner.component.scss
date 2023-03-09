@@ -1,0 +1,91 @@
+ion-header {
+  ion-toolbar {
+    ion-title {
+      font-size: 18px;
+    }
+  }
+}
+ion-list {
+  ion-item {
+    box-shadow: 3px 0 3px 0 var(--ion-color-medium);
+  }
+
+  ion-row {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+ion-label {
+  width: 60px;
+  height: 30px;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0060a4;
+  span {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+}
+
+ion-content {
+  --background: #ffffff;
+  ion-grid {
+    --ion-background-color: #ffffff;
+  }
+}
+
+.IconArrowSuivant {
+  ion-img {
+    align-content: end;
+    width: 30px;
+    height: 30px;
+  }
+  margin: 1px 0 0 0;
+  object-fit: contain;
+}
+
+.IconFerm {
+  ion-img {
+    width: 30px;
+    height: 30px;
+  }
+  margin: 0 0 1px -10px;
+  object-fit: contain;
+}
+
+.row_subtitle {
+  background-color: #cbe9ff;
+  min-height: 50px;
+  margin-top: 0;
+}
+
+/* For Tablets */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .IconFerm {
+    margin: 0 0 1px 0px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 1024px) and (max-width: 1080px) {
+  .IconFerm {
+    margin: 0 0 1px 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}

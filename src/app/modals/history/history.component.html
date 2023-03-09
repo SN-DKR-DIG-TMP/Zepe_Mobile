@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Historique
+        </ion-title>
+        <ion-buttons slot="primary">
+            <ion-button (click)="onCancel()">
+                <ion-icon name="close"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <p *ngIf="history== null && history== []">not good</p>
+    <ion-grid class="HistoryTable" *ngIf="history!== null && history!== []">
+        <ion-row id="bodyHistory">
+            <ion-col size="4"><span style="font-weight: bold;">Date</span></ion-col>
+            <ion-col size="4" id="society"><span style="font-weight: bold;">Commerce</span></ion-col>
+            <ion-col size="4" class="ion-text-center" style="font-weight: bold;"><span>Montant</span></ion-col>
+        </ion-row>
+        <ion-col  *ngFor="let cashment of cashments">
+            <ion-row id="bodyListHistory" *ngIf="cashment.isValid">
+                
+                    <ion-col size="4"><span>{{ cashment.date }}</span></ion-col>
+                    <ion-col size="4" id="society"><span>{{cashment.trade.name}}</span></ion-col>
+                    <ion-col size="4" class="ion-text-center">
+                        <div class="tickets ion-text-center">
+                            <ion-label class="ticket_font"><span>{{cashment.amount}}F</span>
+                            </ion-label>
+                        </div>
+                    </ion-col>
+            </ion-row>
+        </ion-col>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Données Personnelles</ion-title>
+        <ion-buttons slot="primary">
+            <ion-button (click)="onCancel()">
+                <ion-icon name="close"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div class="card">
+        <div class="header">
+            <div class="avatar">
+                <img src="assets/image_zepe/profile.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <label *ngIf="user == null"> Erreur Données perdues </label>
+    <div *ngIf="user" class="form">
+        <!-- <h2>Données personnelles</h2> -->
+        <p>
+            <ion-label for="firstName" class="floatLabel">
+                Prénom:
+            </ion-label>
+                <ion-input class="form-control" id="firstName" value="{{user.firstName}}" disabled></ion-input>
+        </p>
+        <p>
+            <ion-label for="LastName" class="floatLabel">
+                Nom:
+            </ion-label>
+            <ion-input class="form-control" id="LastName" value="{{user.lastName}}" disabled></ion-input>
+        </p>
+        <p>
+            <ion-label for="Matricule" class="floatLabel">
+                Matricule:
+            </ion-label>
+            <ion-input class="form-control" id="Matricule" value="{{user.username}}" disabled></ion-input>
+        </p>
+        <p>
+            <ion-label for="Partner" class="floatLabel">
+                Partenaire:
+            </ion-label>
+            <ion-input class="form-control" id="Partner" value="{{user.partner}}" disabled></ion-input>
+        </p>
+        <p>
+            <ion-label for="Mail" class="floatLabel">
+                Mail:
+            </ion-label>
+            <ion-input class="form-control" id="Mail" value="{{user.email}}" disabled></ion-input>
+        </p>
+    </div>
+</ion-content>
